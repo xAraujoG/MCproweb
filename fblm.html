@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <title>Flexible Box Layout Model</title>
+   <link href='http://fonts.googleapis.com/css?family=Rosario' rel='stylesheet' type='text/css'>
+   <div id="center2">
+      <style type="text/css">
+         .flexbox {
+            width: 600px;
+            height: 450px;
+            display: -webkit-box;
+            display: box;
+            -webkit-box-orient: horizontal;
+            box-orient: horizontal;
+         }
+
+         .text_center {
+            text-align: center;
+            padding: 8px;
+         }
+
+         .flexbox>div {
+            -webkit-transition: 1s ease-out;
+            transition: 1s ease-out;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            border: 2px solid rgb(0, 195, 255);
+            width: 120px;
+            margin: 10px -10px 10px 0px;
+            padding: 20px 20px 20px 20px;
+            box-shadow: 10px 10px 10px dimgrey;
+         }
+
+         .flexbox>div:nth-child(1) {
+            background-color: rgb(255, 255, 255);
+         }
+
+         .flexbox>div:nth-child(2) {
+            background-color: rgb(255, 255, 255);
+         }
+
+         .flexbox>div:nth-child(3) {
+            background-color: rgb(255, 255, 255);
+         }
+
+         .flexbox>div:nth-child(4) {
+            background-color: rgb(255, 255, 255);
+         }
+
+         .flexbox>div:hover {
+            width: 200px;
+            color: white;
+            font-weight: bold;
+         }
+
+         .flexbox>div:nth-child(1):hover {
+            background-color: #fe7ef0;
+         }
+
+         .flexbox>div:nth-child(2):hover {
+            background-color: #3fd4fb;
+         }
+
+         .flexbox>div:nth-child(3):hover {
+            background-color: #fe7ef0;
+         }
+
+         .flexbox>div:nth-child(4):hover {
+            background-color: #3fd4fb;
+         }
+
+         p {
+            height: 270px;
+            overflow: hidden;
+            font-family: "Rosario"
+         }
+      </style>
+</head>
+
+<body>
+   <div class="flexbox">
+      <div>
+         <center><img src="baby.png" alt="Good programming practice icon"></center>
+         <p class="text_center"><strong>Baby Shower</strong><br><br>
+            &hearts; Servicio 1 <br><br>
+            &hearts; Servicio 2 <br><br>
+            &hearts; Servicio 3 <br><br>
+         </p>
+      </div>
+      <div>
+         <center><img src="boda.png" alt="Error prevention tip icon"></center>
+         <p class="text_center"><strong>Boda</strong><br><br>
+            &hearts; Servicio 1 <br><br>
+            &hearts; Servicio 2 <br><br>
+            &hearts; Servicio 3 <br><br>
+         </p>
+      </div>
+      <div>
+         <center><img src="xv.png" alt="Common programming error icon"></center>
+         <p class="text_center"><strong>XV A&ntilde;os</strong><br><br>
+            &hearts; Servicio 1 <br><br>
+            &hearts; Servicio 2 <br><br>
+            &hearts; Servicio 3 <br><br>
+         </p>
+      </div>
+      <div>
+         <center><img src="cumple.png" alt="Software engineering observation icon"></center>
+         <p class="text_center"> <strong>Cumplea&ntilde;os</strong><br><br>
+            &hearts; Servicio 1 <br><br>
+            &hearts; Servicio 2 <br><br>
+            &hearts; Servicio 3 <br><br>
+         </p>
+      </div>
+   </div>
+   </div>
+</body>
+
+</html>
